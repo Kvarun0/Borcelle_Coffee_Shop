@@ -48,6 +48,23 @@ body{
     background: var(--bg);
 }
 
+section{
+    padding: 2rem;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
 
 .btn{
     margin-top: 1rem;
@@ -65,18 +82,24 @@ body{
 
 
 .header{
-    background: var(--bg);
+    /* background: var(--bg); */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%;
-    border-bottom: var(--border);
+    padding: .5rem 7%;
+    /* border-bottom: var(--border); */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
 }
+
+
+.header a img{
+    max-height:90px ;
+}
+
 
 .header .navbar a{
     margin: 0 1rem;
@@ -159,6 +182,10 @@ body{
     padding: 0 1.5rem;
 }
 
+.header .cart-items-container.active{
+    right: 0;
+}
+
 .header .cart-items-container .cart-item{
     position: relative;
     margin: 2rem 0;
@@ -202,8 +229,77 @@ body{
 }
 
 
+/* ////////////////////////////////////// */
+/* this is home section styling  */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/home-bg-4.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.home .content{
+    display: none;
+    max-width: 40%;
+    margin-left: 50%;
+    background-color: #534d4d;
+    padding: 1rem;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #fdb65e;
+}
+
+.home .content p{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.home .oreder{
+    padding-top: 20%;
+    padding-left: 10%;
+}
+
+.home .oreder .btn:hover{
+    letter-spacing: .1rem;
+    background-color: #fdb65e;
+    color: #13131a;
+}
 
 
+
+
+/* ///////////////////////////////////////////////////// */
+/* about section design    */
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 50%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
 
 
 
@@ -247,7 +343,11 @@ body{
         display: inline-block;
     }
 
-    .header .navbar{
+    .header a img{
+        height: 55px;
+    }
+
+    .header .navbar{    
         position: absolute;
         top: 100%;
         right: -100%;
@@ -276,6 +376,29 @@ body{
         width: 90%;
         right: 2rem;
     }
+
+
+
+    /* home section design  */
+    .home .oreder{
+        padding-top: 26%;
+        padding-left: 29%;
+    }
+    
+    .home .oreder .btn:hover{
+        letter-spacing: .1rem;
+        background-color: #fdb65e;
+        color: #13131a;
+    }
+
+
+
+
+
+
+
+
+
 
 }
 
