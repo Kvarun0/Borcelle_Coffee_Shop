@@ -56,6 +56,7 @@ section{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    padding-top: 2rem;
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
@@ -288,12 +289,12 @@ section{
     flex-wrap: wrap;
 }
 
-.about .row image{
+.about .row .image{
     flex: 1 1 45rem;
 }
 
 .about .row .image img{
-    width: 50%;
+    width: 100%;
 }
 
 .about .row .content{
@@ -301,10 +302,79 @@ section{
     padding: 2rem;
 }
 
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 2.8rem;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
 
 
 
+/* menu section designing start  */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    margin: 0px 5rem;
+}
 
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    box-shadow: 2px 3px 2px 0px rgba(125, 125, 125, 0.9);
+}
+
+.menu .box-container .box img{
+    height: 15rem;
+    width: 20rem;
+    position: sticky;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box .price span{
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.menu .box-container .box .btn{
+    color: var(--black);
+    background-color: #fff;
+}
+
+.menu .box-container .box:hover{
+    background: var(--main-color);
+}
+
+.menu .box-container .box:hover > * {
+    color: var(--black);
+}
+
+.menu .box-container .box .btn:hover{
+    color: #13131a;
+}
 
 
 
