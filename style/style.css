@@ -87,18 +87,19 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 7%;
-    /* border-bottom: var(--border); */
+    padding: .1rem 7%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    background: rgba(19, 19, 26, 0.6);
+
 }
 
 
 .header a img{
-    max-height:90px ;
+    max-height:50px ;
 }
 
 
@@ -357,6 +358,7 @@ section{
     color: #fff;
     font-size: 1.5rem;
     text-decoration: line-through;
+    font-weight: lighter;
 }
 
 .menu .box-container .box .btn{
@@ -375,6 +377,304 @@ section{
 .menu .box-container .box .btn:hover{
     color: #13131a;
 }
+
+
+/* -------------------------------------------------------------------- */
+/* product section design  */
+
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    margin: 0px 5rem;
+}
+
+.products .box-container .box{
+    padding: 1rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.products .box-container .box .icons a{ 
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: 1.3rem 0.3rem;
+    border-radius: 30%;
+}
+
+.products .box-container .box .icons a:hover{
+    background: var(--main-color);
+}
+
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img{
+    /* height: 25rem 0; */
+    height: 18rem;
+    width: 21rem;
+    position: sticky;
+    padding-bottom: 1rem;
+}
+
+.products .box-container .box .content h3{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+}
+
+.products .box-container .box .content .start{
+    padding: 1.5rem;
+}
+
+.products .box-container .box .content .start i{
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.products .box-container .box .content .price{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+
+/* ----------------------------------------------  */
+/* review section design   */
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    margin: 0px 5rem;
+}
+
+.review .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.review .box-container .box .quote{
+    height: 6rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 12rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.review .box-container .box .stars i{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+
+
+/* ---------------------------------------------------- */
+/* contact page designing    */
+.contact .row{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0rem 5rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputbox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--black);
+    border: var(--border);
+}
+
+.contact .row form .inputbox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+
+.contact .row form .inputbox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+
+
+/* ///////////////////////////////////////////////////////// */
+/* blog section designing start    */
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+    margin: 1rem 5rem;
+}
+
+.blogs .box-container .box{
+    border: var(--border);
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover{
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span{
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+
+
+/* ------------------------------------------------- */
+/* footer designing start    */
+.footer{
+    margin: 5rem;
+    background: var(--black);
+    text-align: center;
+}
+
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 3rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border-bottom: .2rem solid #d3ad7f;
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background-color: var(--main-color);
+}
+
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+
+.footer .managedby{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .managedby span{
+    color: var(--main-color);
+}
+
+
+
 
 
 
@@ -478,6 +778,79 @@ section{
     html{
         font-size: 50%;
     }
+
+    .header a img{
+        max-height: 35px;
+    }
+
+    .menu .box-container{
+        margin: 2rem;
+    }
+
+    .products .box-container{
+        margin: 2rem;
+    }
+
+    .review .box-container{
+        margin: 2rem;
+    }
+
+    .contact .row{
+        margin: 2rem;
+    }
+
+    .blogs .box-container{
+        margin:2rem;
+    }
+
+    .blogs .box-container .box .content .title{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    
+    .blogs .box-container .box .content span{
+        font-size: 1.8rem;
+    }
+
+    .blogs .box-container .box .content p{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    
+
+    .footer .links{
+        display: grid;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+    
+    .footer .links a{
+        padding: .7rem 4rem;
+        margin: 1rem;
+        color: #fff;
+        font-size: 2rem;
+        border-bottom: .1rem solid #ababab;
+    }
+    
+    .footer .links a:hover{
+        background-color: var(--main-color);
+    }
+
+    .footer .share a{
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        font-size: 1.8rem;
+    }
+     
+    .footer .managedby{
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+
+
 }
 
 
